@@ -3,6 +3,11 @@ class Persona:
         self.nombre = nombre
         self.edad = edad
 
-persona = Persona('stiv', 24)
+# Permitir que el usuario ingrese el nombre y la edad
+nombre = input("Ingresa el nombre: ")
+edad = int(input("Ingresa la edad: "))
 
-print(persona)
+persona = Persona(nombre, edad)
+
+# Mostrar los datos de la persona
+print(f'Nombre: {persona.nombre}, Edad: {persona.edad}')
