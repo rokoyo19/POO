@@ -8,12 +8,12 @@ class Persona:
 
 # Clase Estudiante hereda de Persona
 class Estudiante(Persona):
-    def __init__(self, nombre, edad, carrera):
+    def __init__(self, nombre, edad, curso):
         super().__init__(nombre, edad)  # Llamamos al constructor de la clase base (Persona)
-        self.carrera = carrera  # Atributo específico de Estudiante
+        self.curso = curso  # Atributo específico de Estudiante
 
     def __str__(self):
-        return f"{super().__str__()}, Carrera: {self.carrera}"
+        return f"{super().__str__()}, Curso: {self.curso}"
     
 class Docente(Persona):
     def __init__(self, nombre, edad, tipoContrato):
