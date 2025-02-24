@@ -21,4 +21,4 @@ class Docente(Persona):
         self.tipoContrato = tipoContrato  # Atributo específico de Docente
 
     def __str__(self):
-        return f"{super().__str__()}, Carrera: {self.carrera}"
+        return f"{super().__str__()}, TipoContrato: {self.tipoContrato}"
