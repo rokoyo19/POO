@@ -6,7 +6,7 @@ class SistemaGestion:
         self.estudiantes = []
         self.docentes = []
 
-    ### 🔹 MÉTODOS PARA ESTUDIANTES
+    ### 🔹 MÉTODOS PARA ESTUDIANTESs
     def agregar_estudiante(self):
         nombre = input("Ingrese el nombre del estudiante: ")
         edad = int(input("Ingrese la edad del estudiante: "))
