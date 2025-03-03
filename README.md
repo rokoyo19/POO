@@ -1,3 +1,3 @@
 #readme
 
-Aquí tendremos un ejercicio de programación orientada a objetos
+Aquí tendremos un ejercicio de programación orientada a objetos..
