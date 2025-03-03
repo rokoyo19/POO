@@ -6,11 +6,13 @@ class Docente(Persona):
         super().__init__(nombre, edad, direccion)  # Llamamos al constructor de la clase base (Persona)
         self.__tipoContrato = tipoContrato  # Atributo específico de Docente
 
-    def get_tipoContrato(self):
+    @property
+    def tipoContrato(self):
         return self.__tipoContrato
-    
-    def set_tipoContrato(self, tipoContrato):
-        self.__tipoContrato=tipoContrato
+
+    @tipoContrato.setter
+    def tipoContrato(self, tipoContrato):
+        self.__tipoContrato = tipoContrato
 
     def __str__(self):
-        return f"{super().__str__()}, TipoContrato: {self.get_tipoContrato}"
+        return f"{super().__str__()}, TipoContrato: {self.tipoContrato}"
